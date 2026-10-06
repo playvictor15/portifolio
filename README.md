@@ -2,19 +2,6 @@
 
 Portfólio pessoal em HTML5, CSS3 e JavaScript puro. Sem build: abra o `index.html` no navegador.
 
-## Como trocar o link do jogo
-
-Abra o `script.js` e altere `gameUrl` no começo do arquivo:
-
-```js
-const CONFIG = {
-    gameUrl: "https://playvictor15.github.io/game-geometrico/",
-    email: "playv290@gmail.com"
-};
-```
-
-Se ficar vazio, o botão do jogo aparece como "Link em breve" (sem link quebrado).
-
 ## O que tem
 
 - Seções: Início, Sobre, Habilidades, Projetos e Contato
