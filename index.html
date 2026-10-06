@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Victor Santos | Desenvolvedor Web</title>
+    <meta name="description" content="João Victor Santos — desenvolvedor web em Maceió/AL. Jogos e aplicações com JavaScript, HTML5, CSS3 e Firebase.">
+    <meta name="theme-color" content="#07090d">
+    <meta property="og:title" content="João Victor Santos | Desenvolvedor Web">
+    <meta property="og:description" content="Jogos e aplicações web com JavaScript e Firebase. Veja os projetos e fale comigo.">
+    <meta property="og:image" content="https://github.com/playvictor15.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="https://github.com/playvictor15.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/lucide@0.383.0"></script>
+    <script defer src="script.js"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"João Victor Santos","jobTitle":"Desenvolvedor Web","email":"playv290@gmail.com","sameAs":["https://github.com/playvictor15","https://instagram.com/joao_victor_000_"]}
+    </script>
+</head>
+<body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+
+    <header class="navbar" id="navbar">
+        <a class="logo" href="#home" aria-label="João Victor — início">Victor<span>.</span></a>
+        <nav aria-label="Menu principal">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+            <i data-lucide="menu" class="icon-menu" aria-hidden="true"></i>
+            <i data-lucide="x" class="icon-close" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="status"><span class="dot" aria-hidden="true"></span>Aberto a estágios e projetos</p>
+                <h1>João Victor Santos</h1>
+                <p class="lead">Desenvolvedor web. Construo jogos e aplicações com JavaScript e Firebase, do login ao banco de dados.</p>
+                <div class="hero-btns">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn btn-ghost">Falar comigo</a>
+                </div>
+            </div>
+            <img src="https://github.com/playvictor15.png" alt="Foto de João Victor Santos" class="profile-pic" width="280" height="280">
+        </section>
+
+        <section id="sobre" class="section">
+            <h2>Sobre</h2>
+            <div class="about">
+                <p>Estudo Desenvolvimento Web na Anhanguera, em Maceió/AL, e aprendo colocando ideias no ar: uma plataforma de ofertas com dados em tempo real e um jogo de plataforma que salta no ritmo da música.</p>
+                <dl class="facts">
+                    <div><dt>Formação</dt><dd>Desenvolvimento Web, Anhanguera (Maceió/AL)</dd></div>
+                    <div><dt>Foco</dt><dd>JavaScript, HTML5, CSS3 e Firebase Firestore</dd></div>
+                    <div><dt>Objetivo</dt><dd>Aplicar o que aprendo em projetos reais e evoluir a cada entrega</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div><h3>Front-end</h3><ul class="chips"><li>HTML5 semântico</li><li>CSS3</li><li>JavaScript</li><li>Design responsivo</li><li>Acessibilidade</li></ul></div>
+                <div><h3>Dados</h3><ul class="chips"><li>Firebase Firestore</li><li>Dados em tempo real</li></ul></div>
+                <div><h3>Publicação</h3><ul class="chips"><li>GitHub</li><li>GitHub Pages</li></ul></div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <h2>Projetos</h2>
+
+            <article class="featured">
+                <div class="stage" aria-hidden="true">
+                    <span class="hud">Tentativa 1</span>
+                    <div class="cube"></div>
+                    <div class="spike"></div>
+                </div>
+                <div class="featured-body">
+                    <h3>Geometry Game</h3>
+                    <p class="kind">Jogo de plataforma rítmico</p>
+                    <p>Um quadrado salta sobre picos e blocos no ritmo da música. Tem três níveis de dificuldade, portais que invertem a gravidade ou mudam a velocidade, e um Modo de Prática com pontos de controle.</p>
+                    <ul class="chips"><li>JavaScript</li><li>Jogo 2D</li><li>Progresso salvo no navegador</li></ul>
+                    <a id="game-link" class="btn btn-primary" href="#projetos" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="gamepad-2" aria-hidden="true"></i> <span>Jogar agora</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project">
+                <div>
+                    <h3>Plataforma de Ofertas Online</h3>
+                    <p class="kind">Aplicação web de produtos afiliados</p>
+                    <p>Divulga produtos da Shopee e do Mercado Livre em uma interface simples, pensada para aumentar a conversão de vendas. Os produtos ficam no Firebase Firestore e aparecem em tempo real.</p>
+                    <ul class="chips"><li>JavaScript</li><li>Firebase</li><li>HTML5/CSS3</li></ul>
+                </div>
+                <a href="https://playvictor15.github.io/ofertas-online/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                    Ver projeto <i data-lucide="external-link" aria-hidden="true"></i>
+                </a>
+            </article>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <div class="contact">
+                <form id="contact-form" class="form">
+                    <label for="nome">Seu nome</label>
+                    <input id="nome" name="nome" type="text" autocomplete="name" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar por e-mail</button>
+                </form>
+                <ul class="links">
+                    <li><button type="button" id="copy-email" class="link-item"><i data-lucide="mail" aria-hidden="true"></i> Copiar e-mail</button></li>
+                    <li><a class="link-item" href="https://wa.me/5582981459660" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a></li>
+                    <li><a class="link-item" href="https://github.com/playvictor15" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a class="link-item" href="https://instagram.com/joao_victor_000_" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram" aria-hidden="true"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><p>João Victor Santos, <span id="footer-year"></span></p></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
